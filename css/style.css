@@ -1,146 +1,181 @@
 * {
   box-sizing: border-box;
-  }
+}
+
+body {
   
-  body{
-    background-color: rgb(211, 194, 174);
-    padding: 20px;
+  background-color: rgb(211, 194, 174);
+  padding: 20px;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(207, 241, 207);
-    padding:20px;
-    color: blue;
-  }
   
-  .header-image {
-    
-    border-radius: 10px;
-    margin-right: 20px;
-    border: 2px solid yellow;
-    max-width: 100%;
-    height: auto;
-    display: block; 
-    margin-left: auto;
-    width: 200px;
-  }
-  
-  nav {
-    display: flex;
-    background-color: #d8a47f;
-    text-align: right;
-  }
-
-  nav.links {
-    font-size: xx-large;
-    display: flex;
-    justify-content: space-between;
+  border-radius: 20px;/* this allows you to round out borders  */
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(158, 145, 145, 0.5);
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(207, 241, 207);
+  padding: 20px;
+  color: blue;
 }
 
+.header-image {
+  border-radius: 10px;
+  margin-right: 20px;
+  border: 2px solid yellow;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  width: 200px;
+}
 
-  main {
-    display: flex;
-  }
-  
-  aside {
-    flex: 30%;
-    background-color: #b9c6ae;
-    padding: 20px;
-    flex-wrap: wrap;
-  }
-  section {
-    flex: 70%;
-    background-color: #fff;
-    padding: 20px;
-  }    
+nav {
+  border-radius: 20px;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  background-color: #d8a47f;
+  text-align: right;
+}
+
+nav.links {
+  font-size: xx-large;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  border-radius: 20px;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+aside {
+  flex: 30%;
+  background-color: #b9c6ae;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+section {
+  flex: 70%;
+  background-color: #fff;
+  padding: 20px;
+}
 
 .lon {
-    color: gray;
+  color: gray;
 }
 
 .header {
-    position: relative;
-    align-items: center;
+  position: relative;
+  align-items: center;
 }
 
 .header h1 {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .header ul {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 .header li {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .links {
-    padding: 20px;
+  padding: 20px;
 }
 
-
-
-.first,.second,.third,.fourth {
-background-color: #e68787;
+.card {
+  background-color: #0f0e0e;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 1px solid black;
 }
 
-.title1, .title2, .title3, .title4 { 
-    color: blueviolet;
-
+.title1,
+.title2,
+.title3,
+.title4 {
+  color: blueviolet;
 }
 
-.paragraph1,.paragraph2,.paragraph3,.paragraph4 {
-    color: rgb(212, 203, 186);
+.paragraph1,
+.paragraph2,
+.paragraph3,
+.paragraph4 {
+  color: rgb(212, 203, 186);
+}
+
+.first,
+.second,
+.third,
+.fourth {
+  background-color: #e68787;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    background-color: azure;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: azure;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
 footer {
-    padding: 20px;
-    text-align: center;
-    background: #13293d;
-    color: #fff;
-  }
-  
-  /* Image Placeholders */
+  padding: 20px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+}
+
+/* Image Placeholders */
 .sample-img {
-    background-color: #fff;
-    width: 100%;
-    padding: 20px;
-    height: 200px;
-    border: 1px solid black;
-  }
-  
-/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+  border-radius: 20px;
+  background-color: #8d2424;
+  width: 100%;
+  padding: 20px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.sample-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* Responsive Design */
 
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
-    header {
-      background: #772014;
-    }
+  header {
+    background: #772014;
   }
-  
-  /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 768px) {
-    nav {
-      background-color: #bb8588;
-    }
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: #bb8588;
   }
-  
-  /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
-    .sample-img {
-      background-color: #8ac4ff;
-    }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  .sample-img {
+    background-color: #8ac4ff;
   }
+}
