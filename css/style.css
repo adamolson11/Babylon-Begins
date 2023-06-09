@@ -1,16 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  
-  background-color: rgb(211, 194, 174);
+  font-family: 'Lobster';
+  color: #CCCCCC;
+  background-image: url("../images/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 20px;
 }
 
 header {
-  
-  border-radius: 20px;/* this allows you to round out borders  */
+  border-radius: 20px;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(158, 145, 145, 0.5);
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #8a9cd6, #110127);
+  padding: 20px;
+  color: blue;
+}
+
+.header {
+  border: 2px solid transparent; 
+  border-radius: 20px;
   border: 2px solid #000;
   box-shadow: 0 0 10px rgba(158, 145, 145, 0.5);
   display: flex;
@@ -18,6 +34,10 @@ header {
   background-color: rgb(207, 241, 207);
   padding: 20px;
   color: blue;
+}
+
+.header:hover {
+  border-color: #be4707; /* this is a cool way to Change border color on hover to match background color */
 }
 
 .header-image {
@@ -46,6 +66,12 @@ nav.links {
   justify-content: space-between;
 }
 
+/*this is the pseudo class that allows the pop out effect*/
+nav.links a:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
 main {
   border-radius: 20px;
   border: 2px solid #000;
@@ -57,16 +83,28 @@ main {
 
 aside {
   flex: 30%;
-  background-color: #b9c6ae;
+  border-radius: 20px;
+  background-color: #111111;
+  background-image: none;
   padding: 20px;
   flex-wrap: wrap;
+  
 }
 
 section {
+  border-radius: 20px;
   flex: 70%;
-  background-color: #fff;
+  padding: 20px;}
+
+
+.dream-section {
+  background-image: url("../images/pexels-hasan-albari-1229861.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 20px;
 }
+
+
 
 .lon {
   color: gray;
@@ -94,6 +132,10 @@ section {
   padding: 20px;
 }
 
+.links a:visited {
+  color: rgb(216, 99, 56);
+}
+
 .card {
   background-color: #0f0e0e;
   border-radius: 10px;
@@ -102,11 +144,25 @@ section {
   border: 1px solid black;
 }
 
+.card p {
+  position: relative;
+}
+
+.card p::after {
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: blue; /* Change the color*/
+}
+
+
+
 .title1,
 .title2,
 .title3,
 .title4 {
-  color: blueviolet;
+  color:#CCCCCC;
 }
 
 .paragraph1,
@@ -114,13 +170,14 @@ section {
 .paragraph3,
 .paragraph4 {
   color: rgb(212, 203, 186);
+
 }
 
 .first,
 .second,
 .third,
 .fourth {
-  background-color: #e68787;
+  background-color: #767779;
 }
 
 footer {
@@ -144,7 +201,7 @@ footer {
 .sample-img {
   border-radius: 20px;
   background-color: #8d2424;
-  width: 100%;
+  width: 25%;
   padding: 20px;
   height: 200px;
   border: 1px solid black;
@@ -157,6 +214,7 @@ footer {
   max-width: 100%;
   max-height: 100%;
 }
+
 /* Responsive Design */
 
 /* Tablets - header changes color */
