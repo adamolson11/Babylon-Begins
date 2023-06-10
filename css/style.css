@@ -1,9 +1,11 @@
+/*cool discovery during research that you can use google fonts*/
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 
+/*Globally sets the layout of the box*/
 * {
   box-sizing: border-box;
 }
-
+/* Body styles */
 body {
   font-family: 'Lobster';
   color: #CCCCCC;
@@ -12,7 +14,7 @@ body {
   background-size: cover;
   padding: 20px;
 }
-
+/* header styles */
 header {
   border-radius: 20px;
   border: 2px solid #000;
@@ -56,7 +58,7 @@ nav {
   border: 2px solid #000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   display: flex;
-  background-color: #d8a47f;
+  background-color: rgb(9, 9, 56);
   text-align: right;
 }
 
@@ -70,6 +72,10 @@ nav.links {
 nav.links a:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
+}
+
+.nav:hover {
+  border-color: #be4707; 
 }
 
 main {
@@ -156,6 +162,23 @@ section {
   color: blue; /* Change the color*/
 }
 
+ul contact-information{
+  list-style-type: none;
+  padding: 0;
+}
+
+li contact-information-list-items {
+  margin-bottom: 10px;
+}
+
+a phone-number{
+  color: blue;
+  text-decoration: none;
+}
+/*the hover for the phone number*/
+a:hover {
+  text-decoration: underline;
+}
 
 
 .title1,
@@ -180,6 +203,99 @@ section {
   background-color: #767779;
 }
 
+/*this is the first background image for the fourth card RESUME*/
+.first{background-image: url("../images/BfOEln.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/*this is the background image for the second card MY WORK*/
+.second{background-image: url("../images/pexels-pixabay-270360.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*this is the background image for the fourth card RESUME*/
+.third{background-image: url("../images/pngtree-futuristic-shape-abstract-background-chemistry-technology-concept-for-website-image_438818.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*this is the background image for the fourth card RESUME*/
+.fourth{background-image: url("../images/5668712.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form {
+  margin: 20px;
+  width: 40%
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.text-input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
 footer {
   border-radius: 20px;
   display: flex;
@@ -191,12 +307,24 @@ footer {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   padding: 20px;
   text-align: center;
   background: #13293d;
   color: #fff;
 }
 
+.footer-link {
+  display: inline-block;
+  margin: 0 10px;}
+
+  .linkedin-image,
+  .github-image {
+    max-width: 100px;
+    height: auto;
+  }
 /* Image Placeholders */
 .sample-img {
   border-radius: 20px;
