@@ -1,367 +1,165 @@
-/*cool discovery during research that you can use google fonts*/
-@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
-
-/*Globally sets the layout of the box*/
 * {
   box-sizing: border-box;
 }
-/* Body styles */
+
 body {
-  font-family: 'Lobster';
-  color: #CCCCCC;
-  background-image: url("../images/giphy.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 20px;
+  display: flexbox;
+  font-family: Arial, Helvetica, sans-serif;
 }
-/* header styles */
+
+
+
+/* Your existing CSS styles */
+
+/* Style the header */
 header {
-  border-radius: 20px;
-  border: 2px solid #000;
-  box-shadow: 0 0 10px rgba(158, 145, 145, 0.5);
   display: flex;
-  justify-content: space-between;
-  background-image: linear-gradient(to right, #8a9cd6, #110127);
-  padding: 20px;
-  color: blue;
-}
-
-.header {
-  border: 2px solid transparent; 
-  border-radius: 20px;
-  border: 2px solid #000;
-  box-shadow: 0 0 10px rgba(158, 145, 145, 0.5);
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(207, 241, 207);
-  padding: 20px;
-  color: blue;
-}
-
-.header:hover {
-  border-color: #be4707; /* this is a cool way to Change border color on hover to match background color */
-}
-
-.header-image {
-  border-radius: 10px;
-  margin-right: 20px;
-  border: 2px solid yellow;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  width: 200px;
-}
-
-nav {
-  border-radius: 20px;
-  border: 2px solid #000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  display: flex;
-  background-color: rgb(9, 9, 56);
-  text-align: right;
-}
-
-nav.links {
-  font-size: xx-large;
-  display: flex;
-  justify-content: space-between;
-}
-
-/*this is the pseudo class that allows the pop out effect*/
-nav.links a:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-}
-
-.nav:hover {
-  border-color: #be4707; 
-}
-
-main {
-  border-radius: 20px;
-  border: 2px solid #000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-aside {
-  flex: 30%;
-  border-radius: 20px;
-  background-color: #111111;
-  background-image: none;
-  padding: 20px;
-  flex-wrap: wrap;
-  
-}
-
-section {
-  border-radius: 20px;
-  flex: 70%;
-  padding: 20px;}
-
-
-.dream-section {
-  background-image: url("../images/pexels-hasan-albari-1229861.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 20px;
-}
-
-
-
-.lon {
-  color: gray;
-}
-
-.header {
-  position: relative;
   align-items: center;
+  justify-content: space-between;
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
 }
 
-.header h1 {
-  margin-right: 20px;
+.header-links {
+  display: flex;
 }
 
-.header ul {
+.header-links ul {
   list-style-type: none;
   display: flex;
 }
 
-.header li {
-  margin-right: 10px;
+.header-links li {
+  margin: 0 10px;
 }
 
-.links {
-  padding: 20px;
-}
-
-.links a:visited {
-  color: rgb(216, 99, 56);
-}
-
-.card {
-  background-color: #0f0e0e;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border: 1px solid black;
-}
-
-.card p {
-  position: relative;
-}
-
-.card p::after {
-  content: attr(data-content);
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: blue; /* Change the color*/
-}
-
-ul contact-information{
-  list-style-type: none;
-  padding: 0;
-}
-
-li contact-information-list-items {
-  margin-bottom: 10px;
-}
-
-a phone-number{
-  color: blue;
+.header-links a {
   text-decoration: none;
+  color: white;
+  font-size: 18px;
+  scroll-behavior: smooth;
 }
-/*the hover for the phone number*/
-a:hover {
+
+.header-links a:hover {
   text-decoration: underline;
 }
 
-
-.title1,
-.title2,
-.title3,
-.title4 {
-  color:#CCCCCC;
+/* Container for flexboxes */
+section {
+display: flex;
 }
 
-.paragraph1,
-.paragraph2,
-.paragraph3,
-.paragraph4 {
-  color: rgb(212, 203, 186);
-
-}
-
-.first,
-.second,
-.third,
-.fourth {
-  background-color: #767779;
-}
-
-/*this is the first background image for the fourth card RESUME*/
-.first{background-image: url("../images/BfOEln.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+/* Style the navigation menu */
+aside {
+  display: flexbox;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
 }
 
 
-
-/*this is the background image for the second card MY WORK*/
-.second{background-image: url("../images/pexels-pixabay-270360.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/*this is the background image for the fourth card RESUME*/
-.third{background-image: url("../images/pngtree-futuristic-shape-abstract-background-chemistry-technology-concept-for-website-image_438818.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+/* Style the content */
+article {
+  display: flexbox;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
 }
 
 
-/*this is the background image for the fourth card RESUME*/
-.fourth{background-image: url("../images/5668712.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-form {
-  margin: 20px;
-  width: 40%
-}
-
-h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.text-input {
-  width: 100%;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-.flex-row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-select {
-  width: 100%;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-textarea {
-  width: 100%;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-  height: 100px;
-  margin-bottom: 10px;
-}
-
-.checkbox {
-  margin-right: 10px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #45a049;
-}
-
-
+/* Style the footer */
 footer {
-  border-radius: 20px;
+  display: flexbox;
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+
+
+.card-container {
+  display: grid;
+ 
+  gap: 20px; /* Add gap between cards in the nav */
+}
+
+.projects {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+
+
+/* Keep your existing CSS code */
+
+ /* Apply grid layout to .projects container */
+ .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Style for individual project cards */
+.projectcard {
+  border: 5px solid rgb(90, 192, 36);
+  background-color: #fff;
+  padding: 10px;
+  /* Remove the width property to allow the grid to control the width */
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  background-color: azure;
-  align-items: center;
+}
+
+.projectcard header {
+  padding: 20px;
+}
+
+.projectcard img {
+  width: 100%;
+}
+
+
+.asidecards{ border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 0 400px;}
+
+
+.asidecards header {
+  padding: 20px;
+}
+
+.asidecards p {
   text-align: center;
-  padding: 20px;
 }
 
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 20px;
-  text-align: center;
-  background: #13293d;
-  color: #fff;
+.asidecards img {
+  width: 100%;
 }
 
-.footer-link {
-  display: inline-block;
-  margin: 0 10px;}
 
-  .linkedin-image,
-  .github-image {
-    max-width: 100px;
-    height: auto;
-  }
-/* Image Placeholders */
-.sample-img {
-  border-radius: 20px;
-  background-color: #8d2424;
-  width: 25%;
-  padding: 20px;
-  height: 200px;
-  border: 1px solid black;
-  display: flex;
-  justify-content: left;
-  align-items: left;
+.asidecards:hover,.projectcard:hover {
+  background-color: #f0f0f0;
+  border-color: #999;
 }
 
-.sample-img img {
-  max-width: 100%;
-  max-height: 100%;
+.asidep{
+  border-bottom: 1px solid black;
+  
 }
 
-/* Responsive Design */
-
-/* Tablets - header changes color */
-@media screen and (max-width: 992px) {
-  header {
-    background: #772014;
-  }
+#password-generator-card {
+  grid-column: span ; /* Make it span two columns */
 }
 
-/* Large smartphones - navbar changes color */
-@media screen and (max-width: 768px) {
-  nav {
-    background-color: #bb8588;
-  }
-}
 
-/* Small smartphones - image placeholders change color */
-@media screen and (max-width: 576px) {
-  .sample-img {
-    background-color: #8ac4ff;
-  }
-}

@@ -1,108 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+  <title>CSS Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
 </head>
-<body class="paragraphs">
-    <header class="header">
-        <h1>Adam<span class="lon">Olson</span></h1>
-        <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging" target="_blank">
-          <img src="images\610EksXe52L.jpg" alt="It's totally normal to talk to a rubber ducky...right???" class="header-image">
-        </a>
-      </header>
-      
-</body>
-
-     
-<nav class="links">
-    <a link1 href="#about-me">About me</a>
-    <a link2 href="#my-work">My work</a>
-    <a link3 href="#contact-me">Contact me</a>
-    <a link4 href="#resume">Resume</a>
-  </nav>
-
-    <main>
-        <aside>
-            <section id="about-me" class="card first">
-              <h2 class="title1">About Me</h2>
-              <p class="paragraph1">"I want to learn to talk to robots and rubber duckies."</p>
-            </section>
-            <section id="my-work" class="card second">
-              <h2 class="title2">My Work</h2>
-              <p class="paragraph2">"I just started so this is sadly...empty 😒 </p>
-            </section>
-            <section id="contact-me" class="card third">
-              <h2 class="title3">Contact Me</h2>
-              <p id="contact-me"class="paragraph3"> <ul contact-information>
-                <li class="contact-information-list-items">Email: <a href="mailto:adam.lee.olson@outlook.com">adam.lee.olson@outlook.com</a></li>
-
-                <li phone-number>Phone Number: <a href="715-245-7219">715-245-7219</a></li>
-              </ul></p>
-            </section>
-            <section class="card fourth">
-              <h2 class="title4">Resume</h2>
-              <p class="paragraph4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptas perspiciatis nam adipisci, aperiam porro veniam blanditiis rerum. Aliquid voluptatibus debitis eaque quia molestias voluptate asperiores repudiandae quis quae consequatur!</p>
-            </section>
-          </aside>
-          <section id="dreams" class="dream-section">
-            <h2>Dream Projects.</h2>
-            <div class="sample-img">To be continued...</div>
-            <p>"oh the places you will go..."</p>
-            <br />
-            <h2>Current Project(s)</h2>
-            <div class="sample-img">
-              <img src="images\maxresdefault.jpg" alt="Project Image">
-            </div>
-            <p>
-              working on a Java Calculator, more to come...
-               <form>
-          <h3>Freelance project for hire? Leave a message!</h3>
-          <p>
-            <label for="username">Name:</label>
-            <input class="text-input" id="username" type="text" placeholder="First Last" />
-          </p>
-          <p>
-            <label for="email">E-mail:</label>
-            <input class="text-input" id="email" type="text" placeholder="me@example.com" />
-          </p>
-          <p class="flex-row">
-            <label for="expertise"> expertise level needed:</label>
-            <select id="expertise">
-              <option>Beginner</option>
-              <option selected>Intermediate</option>
-              <option>Advanced</option>
-            </select>
-          </p>
-          <p>
-            <label for="comment">Comment:</label>
-            <textarea class="text-input" id="comment" placeholder="I need work!"></textarea>
-          </p>
-          <p class="flex-row">
-            <input class="checkbox" id="agreement" type="checkbox" />
-            <label for="agreement">I agree to share my e-mail address with The CSS Blog</label>
-          </p>
-          <p>
-            <button>Submit</button>
-          </p>
-        </form>
-            </p>
+<body>
+  <header>
+    <h2>Adam Olson</h2>
+    <div class="header-links">
+      <ul>
+        <li><a href="#asidecard1">About me</a></li>
+        <li><a href="#asidecard2">Resume</a></li>
+        <li><a href="#asidecard3">Future Projects</a></li>
+        <li><a href="#asidecard4">Contact me</a></li>
+      </ul>
+    </div>
+  </header>
+  <section>
+    <aside>
+      <div class="card-container">
+        <div id="asidecard1" class="asidecards">
+          <h2>About me</h2>
+          <p class="asidep">This is the content of card 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatum alias voluptates rerum maiores ipsum officiis quia non fugiat dolorum, deleniti corporis consequuntur minus aliquam fugit rem natus dignissimos quasi?</p>
+        </div>
+        <div id="asidecard2" class="asidecards">
+          <h2>Resume</h2>
+          <p class="asidep">This is the content of card 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi placeat esse rerum provident optio velit recusandae nobis praesentium, aliquid sit necessitatibus quas quidem iusto ratione iure. Numquam sapiente nostrum blanditiis!</p>
+        </div>
+        <div id="asidecard3" class="asidecards">
+          <h2>Future projects</h2>
+          <p class="asidep">This is the content of card 3. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus nostrum repellat reprehenderit optio eum, nemo ab sint officiis, libero iure, illum earum? Rerum fugit blanditiis quos nam? Dolore, totam eaque..</p>
+        </div>
+        <div id="asidecard4" class="asidecards">
+          <h2>Contact me</h2>
+          <p class="asidep">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, laboriosam. Vel possimus impedit libero, excepturi suscipit, rerum labore cupiditate deleniti nesciunt eveniet quis perspiciatis nobis commodi tempore non? Voluptatum, incidunt!</p>
+        </div>
+      </div>
+    </aside>
+    <article>
+      <!-- Project Cards -->
+      <div class="projects">
+        <a href="https://adamolson11.github.io/silver-octo-adventure/" class="card-link">
+          <section class="projectcard" id="password-generator-card">
+            <header>Password Generator</header>
+            <img src="./images/610EksXe52L.jpg" alt="module 4" /> 
           </section>
-          
-    </main>
-    
-    <footer>
-        <a class="linkedin-link" href="https://www.linkedin.com/in/adam-olson-aab562201/">
-          <img class="linkedin-image" src="../images/download (1).png" alt="Clickable LinkedIn Image">
         </a>
-        <a class="github-link" href="https://github.com/adamolson11">
-          <img class="github-image" src="../images/download (2).png" alt="Clickable GitHub Image">
+        <a href="https://adamolson11.github.io/flashcard-quiz/" class="card-link">
+          <section class="projectcard">
+            <header>Quiz Game</header>
+            <img src="./images/610EksXe52L.jpg" alt="module 4" /> 
+          </section>
         </a>
-        &copy; 2023
-      </footer>
-      
+        <a href="https://adamolson11.github.io/dailyCalendar/" class="card-link">
+          <section class="projectcard">
+            <header>Daily Calendar</header>
+            <img src="./images/610EksXe52L.jpg" alt="module 4" /> 
+          </section>
+        </a>
+        <a href="https://adamolson11.github.io/weatherapp/" class="card-link">
+          <section class="projectcard">
+            <header>Daily Calendar</header>
+            <img src="./images/610EksXe52L.jpg" alt="module 4" /> 
+          </section>
+        </a>
+      </div>
+    </article>
+  </section>
+  <footer>
+    <p>Footer</p>
+  </footer>
 </body>
 </html>
