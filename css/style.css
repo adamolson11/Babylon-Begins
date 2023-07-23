@@ -3,21 +3,33 @@
 }
 
 body {
+
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
 }
 
-/* Style the header */
-header {
+main {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #666;
-  padding: 10px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
+  margin-top: 2%;
 }
+
+
+
+.main-header {
+  display: flex;
+  /* Forces elements to the next line if they don't fit */
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px;
+  background: #13293d;
+  color: #fff;
+  width: 100%; /* Make the header span the full width */
+  
+}
+
+
 
 .header-links {
   display: flex;
@@ -45,64 +57,86 @@ header {
 
 /* Container for flexboxes */
 section {
-  display: flex;
+display: flex;
 }
 
 /* Style the navigation menu */
 aside {
+ max-width: 25%;
   background: #ccc;
   padding: 20px;
 }
 
+
 /* Style the content */
-article {
-  background-color: #f1f1f1;
-  padding: 10px;
+.projects-container{
+display:flexbox;
+  max-width: 50%;
+
 }
 
 /* Style the footer */
 footer {
+  
   background-color: #777;
   padding: 10px;
   text-align: center;
   color: white;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Align the aside and article sections */
+  margin-top: 2%;
+}
+
+
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px; /* Add gap between cards */
-}
+ 
+ }
 
 .projects {
-  display: grid; /* Apply grid layout to .projects container */
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
+
+/* Style for individual project cards */
 .projectcard {
   border: 5px solid rgb(90, 192, 36);
   background-color: #fff;
   padding: 10px;
+  margin: 10px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex: 1 0 0;
+  text-align: center;
 }
+
+
 
 .projectcard header {
   padding: 20px;
+  background: #13293d;
+  color: #fff;
 }
 
-.projectcard img {
+.projectcard img  {
   width: 100%;
+  min-width: 400px;
 }
 
-.asidecards {
-  border-width: 1px;
-  border-radius: 10px;
-  padding: 10px;
-  flex: 0 0 400px;
-}
+
+
+.asidecards{ 
+  display:flexbox;
+ 
+  
+
 
 .asidecards header {
   padding: 20px;
@@ -116,16 +150,23 @@ footer {
   width: 100%;
 }
 
-.asidecards:hover,
-.projectcard:hover {
+
+.asidecards:hover,.projectcard:hover {
   background-color: #f0f0f0;
   border-color: #999;
 }
 
-.asidep {
+.asidep{
   border-bottom: 1px solid black;
+  
 }
 
 #password-generator-card {
-  grid-column: span 2; /* Make it span two columns */
+  grid-column: span 4; /* Make it span two columns */
+}
+
+.aside-container {
+  flex: 0 0 25%; /* Adjust the width of the aside */
+  background-color: #ccc;
+  padding: 20px;
 }
