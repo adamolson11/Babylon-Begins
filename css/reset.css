@@ -1,13 +1,21 @@
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
-    section {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
+@media (max-width: 1200px) {
+  .projectcard {
+    flex: 0 0 calc(33.33% - 2%); 
+    max-width: calc(33.33% - 2%);
+  }
 }
-@media screen and (max-width: 768px) {
-  main,
-  nav {
-    flex-direction: column;
+
+@media (max-width: 768px) {
+  .split-screen {
+    flex-direction: column; 
+  }
+
+  .aside-container {
+    flex: 0 0 100%; 
+  }
+
+  .projectcard {
+    flex: 0 0 100%; 
+    max-width: 100%;
   }
 }

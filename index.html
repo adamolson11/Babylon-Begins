@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>CSS Template</title>
   <meta charset="utf-8">
@@ -7,69 +8,112 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/reset.css">
 </head>
+
 <body>
   <header class="main-header">
-    <h2>Adam Olson</h2>
+    <a href="https://www.linkedin.com/in/adam-olson-aab562201/" target="_blank">
+    <img class ="resumePhoto" src="./images/Resume Photo.jpg"/>
+    </a>
+    <h1>Adam Olson</h1>
+     
     <div class="header-links">
       <ul>
-        <li><a href="#asidecard1">About me</a></li>
-        <li><a href="#asidecard2">Resume</a></li>
-        <li><a href="#asidecard3">Future Projects</a></li>
-        <li><a href="#asidecard4">Contact me</a></li>
+        <li><a href="#aboutme">About me</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#futureprojects">Future Projects</a></li>
+        <li><a href="#contactme">Contact me</a></li>
       </ul>
     </div>
   </header>
 
-  <section class="aside-and-article" >
-    <aside class="card-container">
-        <div id="asidecard1" class="asidecards">
-          <h2>About me</h2>
-          <p class="asidep">This is the content of card 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatum alias voluptates rerum maiores ipsum officiis quia non fugiat dolorum, deleniti corporis consequuntur minus aliquam fugit rem natus dignissimos quasi?</p>
+  <section class="main-content">
+    <div class="split-screen">
+      <aside class="aside-container">
+        <div id="aboutme" class="asidecards">
+          <header>
+            <h2>About me</h2>
+          </header>
+          <p class="asidep"> I am a recent graduate of the University of Wisconsin-Eau Claire, where I earned a double major in Psychology and Mass Communications. I am currently wrapping up a rigorous Full Stack Coding Bootcamp, honing my skills in HTML, JavaScript, CSS, Node.JS, React, SQL, and Java. Prior to this, I gained valuable experience working in product support for a fintech company for 5 years. This role not only solidified my technical acumen but also taught me the art of effective communication with clients, ensuring their needs were met with excellence. I am passionate about leveraging my diverse skill set and experience to create innovative and user-friendly solutions in the world of web development."</p>
         </div>
-        <div id="asidecard2" class="asidecards">
-          <h2>Resume</h2>
-          <p class="asidep">This is the content of card 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi placeat esse rerum provident optio velit recusandae nobis praesentium, aliquid sit necessitatibus quas quidem iusto ratione iure. Numquam sapiente nostrum blanditiis!</p>
+        <div id="resume" class="asidecards">
+          <header>
+            <h2>Resume</h2>
+          </header>
+          <p class="asidep">This is the content of card 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
+            placeat esse rerum provident optio velit recusandae nobis praesentium, aliquid sit necessitatibus quas quidem
+            iusto ratione iure. Numquam sapiente nostrum blanditiis!</p>
         </div>
-        <div id="asidecard3" class="asidecards">
-          <h2>Future projects</h2>
-          <p class="asidep">This is the content of card 3. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus nostrum repellat reprehenderit optio eum, nemo ab sint officiis, libero iure, illum earum? Rerum fugit blanditiis quos nam? Dolore, totam eaque..</p>
+        <div id="futureprojects" class="asidecards">
+          <header>
+            <h2>Future Projects</h2>
+          </header>
+          <p class="asidep">This is the content of card 3. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Possimus nostrum repellat reprehenderit optio eum, nemo ab sint officiis, libero iure, illum earum? Rerum
+            fugit blanditiis quos nam? Dolore, totam eaque..</p>
         </div>
-        <div id="asidecard4" class="asidecards">
-          <h2>Contact me</h2>
-          <p class="asidep">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, laboriosam. Vel possimus impedit libero, excepturi suscipit, rerum labore cupiditate deleniti nesciunt eveniet quis perspiciatis nobis commodi tempore non? Voluptatum, incidunt!</p>
-        </div>
-      </div>
-    </aside>
-    <article class="projects-container">
-      <!-- Project Cards -->
-        <a href="https://adamolson11.github.io/silver-octo-adventure/" class="card-link">
-          <section class="projectcard" id="password-generator-card">
-            <header>Password Generator</header>
-            <img src="./images/610EksXe52L.jpg" alt="module 4" /> 
-          </section>
-        </a>
-        <a href="https://adamolson11.github.io/flashcard-quiz/" class="card-link">
-          <section class="projectcard">
-            <header>Quiz Game</header>
-            <img src="./images/610EksXe52L.jpg" alt="module 4" /> 
-          </section>
-        </a>
-        <a href="https://adamolson11.github.io/dailyCalendar/" class="card-link">
-          <section class="projectcard">
-            <header>Daily Calendar</header>
-            <img src="./images/610EksXe52L.jpg" alt="module 4" /> 
-          </section>
-        </a>
-        <a href="https://adamolson11.github.io/weatherapp/" class="card-link">
-          <section class="projectcard">
-            <header>Weather Application</header>
-            <img src="./images/610EksXe52L.jpg" alt="module 4" /> 
-          </section>
-        </a>
-    </article>
-  </section >
-  <footer>
+        <section class="asidecards">
+          <header>
+            <h2>Contact me</h2>
+          </header>
+          <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+        
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+        
+      </aside>
+
+      <article class="projects-container">
+        <section class="projectcard larger-card" id="password-generator-card">
+          <header>
+            <h2>Password Generator</h2>
+          </header>
+          <a href="https://adamolson11.github.io/silver-octo-adventure/" class="card-link">
+            <img src="./images/Strong-Password-Generator.webp" class="project-Card-Images" alt="module 4" />
+          </a>
+        </section>
+        <section class="projectcard">
+          <header>
+            <h2>Quiz Game</h2>
+          </header>
+          <a href="https://adamolson11.github.io/flashcard-quiz/" class="card-link">
+            <img src="./images/Quiz-Game.jpg" alt="module 4" />
+          </a>
+        </section>
+        <section class="projectcard">
+          <header>
+            <h2>Daily Calendar</h2>
+          </header>
+          <a href="https://adamolson11.github.io/dailyCalendar/" class="card-link">
+            <img src="./images/dailyCalendar.jpg" alt="module 4" />
+          </a>
+        </section>
+        <section class="projectcard">
+          <header>
+            <h2>Weather Application</h2>
+          </header>
+          <a href="https://adamolson11.github.io/weatherapp/" class="card-link">
+            <img src="./images/Weather_iOS_15.webp" alt="module 4" />
+          </a>
+        </section>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
     <p>Footer</p>
   </footer>
 </body>
+
 </html>

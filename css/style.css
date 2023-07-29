@@ -3,170 +3,195 @@
 }
 
 body {
-
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto;
+  background-color: #F2F2EB;
 }
-
-main {
-  display: flex;
-  /* Forces elements to the next line if they don't fit */
-  flex-wrap: wrap;
-  margin-top: 2%;
-}
-
-
 
 .main-header {
   display: flex;
-  /* Forces elements to the next line if they don't fit */
   align-items: center;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 60px;
   background: #13293d;
+  background: linear-gradient(to right, #A9BBC8, #4880a5);
   color: #fff;
-  width: 100%; /* Make the header span the full width */
-  
-}
-
-
-
-.header-links {
-  display: flex;
-}
-
-.header-links ul {
-  list-style-type: none;
-  display: flex;
-}
-
-.header-links li {
-  margin: 0 10px;
-}
-
-.header-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  scroll-behavior: smooth;
-}
-
-.header-links a:hover {
-  text-decoration: underline;
-}
-
-/* Container for flexboxes */
-section {
-display: flex;
-}
-
-/* Style the navigation menu */
-aside {
- max-width: 25%;
-  background: #ccc;
   padding: 20px;
 }
 
+.main-header img.resumePhoto {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
 
-/* Style the content */
-.projects-container{
-display:flexbox;
-  max-width: 50%;
+
+
+img.resumePhoto:hover {
+  box-shadow: 0 0 10px rgba(240, 235, 235, 0.5); /* Add a shadow on hover */
+}
+.main-header h1 {
+  font-size: 24px;
+}
+
+.main-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-header li {
+  margin-right: 20px;
 
 }
 
-/* Style the footer */
-footer {
-  
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
+.main-header a {
+  text-decoration: none;
   color: white;
+  font-size: 18px;
 }
 
-.container {
+.split-screen {
+  display: flex;
+}
+
+.aside-container {
+  flex: 0 0 25%;
+  background-color: #ccc;
+  padding: 20px;
+}
+
+/* Vertical line alongside the aside cards */
+.aside-container {
+  position: relative;
+}
+
+
+/* Vertical line alongside the aside cards */
+.aside-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 6px; /* Adjust the width of the vertical line */
+  background-color: #88734C; /* Accent color */
+}
+
+.projects-container {
+  flex: 1;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Align the aside and article sections */
-  margin-top: 2%;
+  gap: 20px;
+  padding: 20px;
 }
 
-
-.card-container {
-  display: grid;
- 
- }
-
-.projects {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 50px;
+.asidecards {
+  margin-bottom: 20px;
+  transition: box-shadow 0.3 ease-in-out;
+  border-color: bold;
 }
 
-
-/* Style for individual project cards */
+.asidecards:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow on hover */
+}
 .projectcard {
-  border: 5px solid rgb(90, 192, 36);
+  border: 5px solid #88734C;
+
   background-color: #fff;
-  padding: 10px;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  flex: 1 0 0;
-  text-align: center;
+  padding: 1%;
+  margin: 1%;
+  flex: 0 0 25%; 
+  max-width: 25%; /*this set the width and height*/
+  transition: box-shadow 0.3s ease-in-out; 
+  border-radius: 15px; /* Add rounded corners to the project cards */
+  overflow: hidden; 
 }
-
-
 
 .projectcard header {
   padding: 20px;
   background: #13293d;
   color: #fff;
+  font-size: 1.2rem; 
+  text-align: center; 
 }
 
-.projectcard img  {
+
+.larger-card {
+  flex: 0 0 95%; /* Width of the first (larger) project card */
+  max-width: 85%; /* Set the maximum width of the first (larger) project card */
+}
+
+
+.projectcard:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a shadow and a  hover */
+}
+
+
+.project-Card-Images {
   width: 100%;
-  min-width: 400px;
 }
 
-
-
-.asidecards{ 
-  display:flexbox;
- 
-  
-
-
-.asidecards header {
-  padding: 20px;
+.projectcard img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
 }
 
-.asidecards p {
+.footer {
+  background-color: #88734C;
+  padding: 10px;
   text-align: center;
+  color: white;
+  background: linear-gradient(to right, #13293d, #4880a5);
 }
 
-.asidecards img {
-  width: 100%;
+
+.asidecards p::first-letter {
+  font-size: 2em;
+  color: #88734C; /* Accent color for the first letter */
+  font-weight: bold;
 }
 
-
-.asidecards:hover,.projectcard:hover {
-  background-color: #f0f0f0;
-  border-color: #999;
-}
-
-.asidep{
-  border-bottom: 1px solid black;
-  
-}
-
-#password-generator-card {
-  grid-column: span 4; /* Make it span two columns */
-}
-
-.aside-container {
-  flex: 0 0 25%; /* Adjust the width of the aside */
-  background-color: #ccc;
+.contact-form {
   padding: 20px;
+  border: 5px solid #88734C; /* Accent color */
+  background-color: #F2F2EB; /* Neutral color */
+  border-radius: 8px; /* Rounded edges */
 }
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #A9BBC8; /* Headline color */
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: vertical; /* Allows vertical resizing of the textarea */
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #88734C; /* Accent color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+
+
