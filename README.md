@@ -17,6 +17,3 @@ Repository contains a quality readme with...
 
 screenshot, 
 
-
-
-link to deployed application.
