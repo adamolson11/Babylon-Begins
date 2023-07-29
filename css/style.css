@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #a9bbc8;
+  --neutral-color: #f2f2eb;
+  --accent-color: #88734c;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -16,7 +22,9 @@ body {
   background: linear-gradient(to right, #A9BBC8, #4880a5);
   color: #fff;
   padding: 20px;
+  
 }
+
 
 .main-header img.resumePhoto {
   width: 80px;
@@ -29,7 +37,7 @@ body {
 
 
 img.resumePhoto:hover {
-  box-shadow: 0 0 10px rgba(240, 235, 235, 0.5); /* Add a shadow on hover */
+  box-shadow: 0 0 10px rgba(240, 235, 235, 0.5);
 }
 .main-header h1 {
   font-size: 24px;
@@ -77,7 +85,7 @@ img.resumePhoto:hover {
   top: 0;
   bottom: 0;
   right: 0;
-  width: 6px; /* Adjust the width of the vertical line */
+  width: 6px; 
   background-color: #88734C; /* Accent color */
 }
 
@@ -96,7 +104,7 @@ img.resumePhoto:hover {
 }
 
 .asidecards:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow on hover pieces */
 }
 .projectcard {
   border: 5px solid #88734C;
@@ -117,6 +125,24 @@ img.resumePhoto:hover {
   color: #fff;
   font-size: 1.2rem; 
   text-align: center; 
+  background: var(--primary-color);
+}
+
+.projectcard header {
+  animation: rotateColors 8s linear infinite; /* Change the duration (8s) if needed */
+}
+
+
+@keyframes rotateColors {
+  0% {
+    background: var(--primary-color);
+  }
+  50% {
+    background: var(--accent-color);
+  }
+  100% {
+    background: var(--primary-color);
+  }
 }
 
 
@@ -178,7 +204,7 @@ img.resumePhoto:hover {
 }
 
 .contact-form textarea {
-  resize: vertical; /* Allows vertical resizing of the textarea */
+  resize: vertical; /*this will allow the vertical line to show up*/
 }
 
 .contact-form button {
@@ -192,6 +218,27 @@ img.resumePhoto:hover {
 
 
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.social-media ul {
+  display: flex;
+  justify-content: center;
+}
+
+
+.social-media li {
+  margin: 0 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
 
 
 
