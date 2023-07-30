@@ -147,10 +147,14 @@ img.resumePhoto:hover {
 
 
 .larger-card {
-  flex: 0 0 95%; /* Width of the first (larger) project card */
-  max-width: 85%; /* Set the maximum width of the first (larger) project card */
+  flex: 0 0 75%; /* Width of the first (larger) project card */
+  max-width: 75%; /* Set the maximum width of the first (larger) project card */
 }
 
+.projectcard:not(.larger-card){
+flex: 0 0 27%;
+max-width: 27%;
+}
 
 .projectcard:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a shadow and a  hover */
@@ -240,5 +244,14 @@ ul {
   padding: 0;
 }
 
+
+.main-header a:hover {
+  color: #f2f2eb; 
+}
+
+
+.footer a:hover {
+  color: #f2f2eb; 
+}
 
 
